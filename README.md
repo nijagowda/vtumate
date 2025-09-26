@@ -18,8 +18,11 @@ A comprehensive web-based student management application designed for VTU (Visve
 ## 📸 Screenshots
 
 ![Dashboard](screenshots/dashboard.png)
-![Timetable](screenshots/timetable.png)
-![SGPA Calculator](screenshots/sgpa-calculator.png)
+![Notes](screenshots/notes.png)
+![Bunk Calculator](screenshots/bunkcalculator.png)
+![2 Bunk Calculator](screenshots/bunkcalculator2.png)
+![Attendance Logger](screenshots/attendance_logger.png)
+![SGPA Calculator](screenshots/sgpa_calculator.png)
 
 ## 🛠️ Technologies Used
 
@@ -143,8 +146,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
+- GitHub: [@nijagowda](https://github.com/nijagowda)
+- LinkedIn: [Nijagowda Patil](https://www.linkedin.com/in/nijagowda-patil-73479131b/?originalSubdomain=in)
 
 ## 🙏 Acknowledgments
 
