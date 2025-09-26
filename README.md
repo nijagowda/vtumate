@@ -7,20 +7,17 @@ A comprehensive web-based student management application designed for VTU (Visve
 - **User Authentication**: Secure login and registration system
 - **Dashboard**: Centralized hub for all student activities
 - **Timetable Manager**: Organize classes and track attendance
-- **Notes Management**: Upload, access, and download study materials
+- **Notes Management**: access and download study materials
 - **SGPA Calculator**: Calculate Semester Grade Point Average based on grades and credits
 - **Class Bunking Tracker**: Monitor attendance patterns
 
-## 🚀 Live Demo
-
-[Add your deployed URL here when available]
 
 ## 📸 Screenshots
 
 ![Dashboard](screenshots/dashboard.png)
 ![Notes](screenshots/notes.png)
-![Bunk Calculator](screenshots/bunkcalculator.png)
-![2 Bunk Calculator](screenshots/bunkcalculator2.png)
+![Bunk Calculator](screenshots/bunk_calculator.png)
+![2 Bunk Calculator](screenshots/bunk_calculator2.png)
 ![Attendance Logger](screenshots/attendance_logger.png)
 ![SGPA Calculator](screenshots/sgpa_calculator.png)
 
