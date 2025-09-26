@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bunk Calculator</title>
+  <link rel="stylesheet" href="bunk.css" />
+</head>
+<body>
+<div class="bunk-wrapper">
+  <div class="bunk-container">
+    <h2>Bunk Calculator</h2>
+
+    <div class="bunk-form">
+      <label for="subjectSelect">Select Subject:</label>
+      <select id="subjectSelect">
+        <option value="" disabled selected>Select a subject</option>
+        <option value="BMATE201">BMATE201</option>
+        <option value="BPHYE202">BPHYE202</option>
+        <option value="BBEE203">BBEE203</option>
+        <option value="BESCK204D">BESCK204D</option>
+        <option value="BPWSK206">BPWSK206</option>
+        <option value="BIOCK207">BIOCK207</option>
+        <option value="BSFHK258">BSFHK258</option>
+        <option value="MATLAB">MATLAB</option>
+        <option value="PYTHON">PYTHON</option>
+      </select>
+
+      <label>Total Classes Held:</label>
+      <input type="number" id="held" placeholder="e.g. 24" />
+
+      <label>Classes Attended:</label>
+      <input type="number" id="attended" placeholder="e.g. 18" />
+
+      <button id="saveAttendance">Save Attendance</button>
+      <button id="resetAttendance" style="background-color: #e53935; margin-top: 10px;">Reset All Attendance</button>
+    </div>
+
+    <div class="bunk-result">
+      <h3>Bunk Status</h3>
+      <div id="bunkStatus">No data</div>
+    </div>
+  </div>
+ <div class="summary-container">
+  <h3>Attendance Summary</h3>
+    <table id="summaryTable">
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Held</th>
+      <th>Attended</th>
+      <th>Percentage</th>
+      <th>Safe to Bunk?</th>
+      <th>Can Bunk</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+    </table>
+</div>
+</div>
+<div class="logger-container">
+  <h2>Weekly Attendance Logger</h2>
+
+  <form id="logForm">
+    <label for="logSubject">Subject:</label>
+    <select id="logSubject" required>
+      <option disabled selected>Select Subject</option>
+      <option value="BMATE201">BMATE201</option>
+      <option value="BPHYE202">BPHYE202</option>
+      <option value="BBEE203">BBEE203</option>
+      <option value="BESCK204D">BESCK204D</option>
+      <option value="BPWSK206">BPWSK206</option>
+        <option value="BIOCK207">BIOCK207</option>
+        <option value="BSFHK258">BSFHK258</option>
+        <option value="MATLAB">MATLAB</option>
+        <option value="PYTHON">PYTHON</option>
+      <option value="PHYSICS LAB">PHYSICS LAB</option>
+      <!-- Add more subjects as needed -->
+    </select>
+
+    <label for="logDate">Date:</label>
+    <input type="date" id="logDate" required />
+
+    <label>Status:</label>
+    <div class="log-toggle">
+      <label><input type="radio" name="status" value="attended" required /> Attended</label>
+      <label><input type="radio" name="status" value="missed" /> Missed</label>
+    </div>
+
+    <button type="submit">Log Attendance</button>
+    <button id="clearLogs" style="background-color: #e53935; color: white; margin-top: 20px; padding: 10px 16px; border: none; border-radius: 6px; cursor: pointer;">
+  Clear All Logs
+</button>
+
+  </form>
+
+  <h3>Weekly Logs</h3>
+  <table id="logTable">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+
+  <script src="bunk.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* === General Layout === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  padding: 40px 15px;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* === Header + Search === */
+h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #2e7d32;
+  text-align: center;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+#searchInput {
+  flex: 1;
+  max-width: 300px;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* === Subject List === */
+.subject-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* === Subject Title + Modules === */
+.subject-item h4 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+.module-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+}
+
+.module-link {
+  background-color: #2196f3;
+  color: white;
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.module-link:hover {
+  background-color: #1976d2;
+  transform: translateY(-2px);
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  .header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #searchInput {
+    width: 100%;
+    max-width: none;
+  }
+
+  .module-links {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - VTUMate</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>VTUMate</h2>
+            </div>
+            <div class="nav-links">
+                <a href="timetable.html">Timetable</a>
+                <a href="notes.html">Notes</a>
+                <a href="cgpa-calculator.html">SGPA Calculator</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h1>Welcome to VTUMate Dashboard</h1>
+        
+        <!-- User Info -->
+        <div class="user-info">
+            <h2>Welcome!</h2>
+            <p>Your personalized student assistant</p>
+        </div>
+
+        <!-- Dashboard Cards for Features -->
+        <div class="cards-container">
+            <div class="card">
+                <h3>Timetable Manager</h3>
+                <p>Organize your classes and track your attendance.</p>
+                <button onclick="window.location.href='timetable.html'">Go to Timetable</button>
+            </div>
+
+            <div class="card">
+                <h3>Notes</h3>
+                <p>Access, upload, and download your study materials.</p>
+                <button onclick="window.location.href='notes.html'">Go to Notes</button>
+            </div>
+
+            <div class="card">
+                <h3>SGPA Calculator</h3>
+                <p>Calculate your SGPA based on your grades and credits.</p>
+                <button onclick="window.location.href='cgpa-calculator.html'">Go to Calculator</button>
+            </div>
+        </div>
+    </main>
+<footer>
+
+        <p>&copy; 2025 VTUMate. All Rights Reserved.</p>
+    </footer>
+    <script>
+        // Assuming user's name is stored in localStorage
+        const userName = localStorage.getItem('userName');
+        if (userName) {
+            document.querySelector('.user-info h2').innerText = `Welcome, ${userName}!`;
+        }
+    </script>
+</body>
+</html>

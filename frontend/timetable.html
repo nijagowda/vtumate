@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable Manager</title>
+    <link rel="stylesheet" href="timetable.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar with draggable subjects -->
+        <div class="sidebar">
+            <h3>Drag a Subject</h3>
+            <div id="subjects">
+                <button class="draggable" id="BMATE201" draggable="true">BMATE201</button>
+                <button class="draggable" id="BPHYE202" draggable="true">BPHYE202</button>
+                <button class="draggable" id="BBEE203" draggable="true">BBEE203</button>
+                <button class="draggable" id="BESCK204D" draggable="true">BESCK204D</button>
+                <button class="draggable" id="BPWSK206" draggable="true">BPWSK206</button>
+                <button class="draggable" id="BIOCK207" draggable="true">BIOCK207</button>
+                <button class="draggable" id="BIOCK207" draggable="true">BSFHK258</button>
+                <button class="draggable" id="BPLCK205B" draggable="true">BPLCK205B</button>
+                <button class="draggable" id="MATLAB" draggable="true">MATLAB</button>
+                <button class="draggable" id="PYTHON" draggable="true">PYTHON LAB</button>
+                <button class="draggable" id="PHYSICS LAB" draggable="true">PHYSICS LAB</button>
+            </div>
+            <button id="saveBtn">Save Timetable</button>
+            <button id="loadBtn">Load Timetable</button>
+            <button id="gotoBunk" onclick="window.location.href='bunk.html'" style="margin-top: 20px; background-color: #2196f3;">
+  Go to Bunk Calculator
+</button>
+        </div>
+
+        <!-- Timetable grid -->
+        <div class="timetable">
+            <div class="grid">
+                <div class="header">
+                    <span>Day / Period</span>
+                    <span>Period 1</span>
+                    <span>Period 2</span>
+                    <span>Period 3</span>
+                    <span>Period 4</span>
+                    <span>Period 5</span>
+                    <span>Period 6</span>
+                    <span>Period 7</span>
+                    <span>Period 8</span>
+                </div>
+                <!-- Days with Periods -->
+<div class="row">
+  <span class="day">Monday</span>
+  <div class="cell" data-day="Monday" data-period="1"></div>
+  <div class="cell" data-day="Monday" data-period="2"></div>
+  <div class="cell" data-day="Monday" data-period="3"></div>
+  <div class="cell" data-day="Monday" data-period="4"></div>
+  <div class="cell" data-day="Monday" data-period="5"></div>
+  <div class="cell" data-day="Monday" data-period="6"></div>
+  <div class="cell" data-day="Monday" data-period="7"></div>
+  <div class="cell" data-day="Monday" data-period="8"></div>
+</div>
+<div class="row">
+  <span class="day">Tuesday</span>
+  <div class="cell" data-day="Tuesday" data-period="1"></div>
+  <div class="cell" data-day="Tuesday" data-period="2"></div>
+  <div class="cell" data-day="Tuesday" data-period="3"></div>
+  <div class="cell" data-day="Tuesday" data-period="4"></div>
+  <div class="cell" data-day="Tuesday" data-period="5"></div>
+  <div class="cell" data-day="Tuesday" data-period="6"></div>
+  <div class="cell" data-day="Tuesday" data-period="7"></div>
+  <div class="cell" data-day="Tuesday" data-period="8"></div>
+</div>
+<div class="row">
+  <span class="day">Wednesday</span>
+  <div class="cell" data-day="Wednesday" data-period="1"></div>
+  <div class="cell" data-day="Wednesday" data-period="2"></div>
+  <div class="cell" data-day="Wednesday" data-period="3"></div>
+  <div class="cell" data-day="Wednesday" data-period="4"></div>
+  <div class="cell" data-day="Wednesday" data-period="5"></div>
+  <div class="cell" data-day="Wednesday" data-period="6"></div>
+  <div class="cell" data-day="Wednesday" data-period="7"></div>
+  <div class="cell" data-day="Wednesday" data-period="8"></div>
+</div>
+<div class="row">
+  <span class="day">Thursday</span>
+  <div class="cell" data-day="Thursday" data-period="1"></div>
+  <div class="cell" data-day="Thursday" data-period="2"></div>
+  <div class="cell" data-day="Thursday" data-period="3"></div>
+  <div class="cell" data-day="Thursday" data-period="4"></div>
+  <div class="cell" data-day="Thursday" data-period="5"></div>
+  <div class="cell" data-day="Thursday" data-period="6"></div>
+  <div class="cell" data-day="Thursday" data-period="7"></div>
+  <div class="cell" data-day="Thursday" data-period="8"></div>
+</div>
+<div class="row">
+  <span class="day">Friday</span>
+  <div class="cell" data-day="Friday" data-period="1"></div>
+  <div class="cell" data-day="Friday" data-period="2"></div>
+  <div class="cell" data-day="Friday" data-period="3"></div>
+  <div class="cell" data-day="Friday" data-period="4"></div>
+  <div class="cell" data-day="Friday" data-period="5"></div>
+  <div class="cell" data-day="Friday" data-period="6"></div>
+  <div class="cell" data-day="Friday" data-period="7"></div>
+  <div class="cell" data-day="Friday" data-period="8"></div>
+</div>
+<div class="row">
+  <span class="day">Saturday</span>
+  <div class="cell" data-day="Saturday" data-period="1"></div>
+  <div class="cell" data-day="Saturday" data-period="2"></div>
+  <div class="cell" data-day="Saturday" data-period="3"></div>
+  <div class="cell" data-day="Saturday" data-period="4"></div>
+  <div class="cell" data-day="Saturday" data-period="5"></div>
+  <div class="cell" data-day="Saturday" data-period="6"></div>
+  <div class="cell" data-day="Saturday" data-period="7"></div>
+  <div class="cell" data-day="Saturday" data-period="8"></div>
+</div>
+
+
+                <!-- Repeat the row for other days (Tuesday to Saturday) -->
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

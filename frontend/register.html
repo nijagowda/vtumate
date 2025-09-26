@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - VTUMate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <label for="usn">USN:</label>
+            <input type="text" id="usn" required><br>
+
+            <label for="semester">Semester:</label>
+            <select id="semester" required>
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+                <option value="3">Semester 3</option>
+                <option value="4">Semester 4</option>
+                <option value="5">Semester 5</option>
+                <option value="6">Semester 6</option>
+                <option value="7">Semester 7</option>
+                <option value="8">Semester 8</option>
+            </select><br>
+
+            <label for="course">Course:</label>
+            <select id="course" required>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Information Science">Information Science</option>
+                <option value="Electronics and Communication">Electronics and Communication</option>
+                <option value="Chemical Engineering">Chemical Engineering</option>
+                <option value="Aerospace Engineering">Aerospace Engineering</option>
+            </select><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br>
+
+            <label for="password_confirmation">Confirm Password:</label>
+            <input type="password" id="password_confirmation" required><br>
+            
+            <button type="submit" id="registerBtn">Register</button>
+        </form>
+        <div id="error-message" style="color:red;"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
