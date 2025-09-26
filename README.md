@@ -18,8 +18,11 @@ A comprehensive web-based student management application designed for VTU (Visve
 ## 📸 Screenshots
 
 ![Dashboard](screenshots/dashboard.png)
-![Timetable](screenshots/timetable.png)
-![SGPA Calculator](screenshots/sgpa-calculator.png)
+![Notes](screenshots/notes.png)
+![Bunk Calculator](screenshots/bunkcalculator.png)
+![2 Bunk Calculator](screenshots/bunkcalculator2.png)
+![Attendance Logger](screenshots/attendance_logger.png)
+![SGPA Calculator](screenshots/sgpa_calculator.png)
 
 ## 🛠️ Technologies Used
 
