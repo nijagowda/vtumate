@@ -144,7 +144,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Your Name**
 - GitHub: [@nijagowda](https://github.com/nijagowda)
-- LinkedIn: [Nijagowda Patil](https://www.linkedin.com/in/nijagowda-patil-73479131b/?originalSubdomain=in)
+- LinkedIn: [Nijagowda Patil](https://www.linkedin.com/in/nijagowdapatil)
 
 ## 🙏 Acknowledgments
 
